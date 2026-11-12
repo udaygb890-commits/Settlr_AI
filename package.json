@@ -1,0 +1,21 @@
+{
+  "name": "settlr-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Settlr AI — AI-powered group expense management, intelligent bill splitting, and settlement platform",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build:server": "npm --prefix server run build",
+    "build:client": "npm --prefix client run build",
+    "build": "npm run build:server && npm run build:client",
+    "test:server": "npm --prefix server test",
+    "test:client": "npm --prefix client test",
+    "test": "npm run test:server && npm run test:client",
+    "typecheck:server": "npm --prefix server run typecheck",
+    "typecheck:client": "npm --prefix client run typecheck",
+    "typecheck": "npm run typecheck:server && npm run typecheck:client"
+  }
+}
+
